@@ -5,7 +5,7 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(name)
-  name.collect{|speaker| badge.maker(name)}
+  name.collect { |names| badge.maker(name)}
   end
 end
 
