@@ -5,10 +5,8 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(name)
-  attendees == []
-  badges.each do |speaker|
+  badges.collect do {|speaker| badge.maker(name)}
   end
-  
 end
 
 def assign_rooms(name, room_number)
