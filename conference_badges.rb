@@ -11,10 +11,9 @@ end
 def assign_rooms(room_numbers)
   rooms = []
   room_numbers.each_with_index do |name, i|
-    rooms << batch_badge_creator{i +1}
+    rooms << "Hello, #{name}! You'll be assigned to room #{i +1}!"
   end
   rooms 
-
 end
 
 def printer(attendees)
